@@ -1,0 +1,12 @@
+[package]
+name = "rust_hls_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = { version = "4", features = ["openssl"] }
+openssl = { version = "0.10", features = ["v110"] }
+openssl-sys = "0.9"
+actix-files = "0.6.2"
